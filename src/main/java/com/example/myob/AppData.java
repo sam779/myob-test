@@ -2,9 +2,9 @@ package com.example.myob;
 
 public class AppData {
 
-    private final String name;
-    private final String version;
-    private final String description;
+    private String name;
+    private String version;
+    private String description;
 
     public AppData(String name, String version, String description) {
         this.name = name;

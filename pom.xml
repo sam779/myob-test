@@ -9,9 +9,9 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>myob</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>MyobRestApi</name>
+	<artifactId>MyobRestApi</artifactId>
+	<packaging>war</packaging>
+	<version>0.1.0</version>
 
 
 	<properties>
@@ -42,7 +42,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
