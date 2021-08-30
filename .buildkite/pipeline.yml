@@ -1,0 +1,9 @@
+steps:
+  - label: ':rocket: Deploy to PROD'
+    branches: "master"
+    command: ops/bin/deploy
+    retry:
+      manual:
+        permit_on_passed: true
+    agents:
+      - queue=myob-rest-api-agent
