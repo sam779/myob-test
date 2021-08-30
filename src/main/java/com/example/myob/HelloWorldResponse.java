@@ -13,7 +13,7 @@ public class HelloWorldResponse {
     private static final String response = "Hello World!";
 
     @GetMapping("/")
-    public HelloWorld helloWorld(String message) throws IOException {
+    public static HelloWorld helloWorld(String message) throws IOException {
         HttpURLConnection connection = (HttpURLConnection) new URL("http://localhost:8080/").openConnection();
 
         return new HelloWorld(String.format(response));

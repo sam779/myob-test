@@ -1,0 +1,6 @@
+---
+applications:
+  - name: myob-rest-api
+    random-route: true
+    memory: 128M
+    path: target/myob-rest-api-0.1.0.war
