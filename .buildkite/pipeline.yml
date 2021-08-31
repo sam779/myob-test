@@ -1,6 +1,6 @@
 steps:
   - label: ':rocket: Deploy'
-    branches: "master"
+#    branches: "master"
     command: ops/bin/deploy
     retry:
       manual:
