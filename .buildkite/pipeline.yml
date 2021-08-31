@@ -7,4 +7,4 @@ steps:
       manual:
         permit_on_passed: true
     agents:
-      queue: europa-fs-customer-management
+      queue: myob-rest-api-agent
