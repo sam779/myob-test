@@ -2,6 +2,16 @@ README
 
 This application is a simple implementation of a REST api using Spring Boot Framework.
 
+To deploy the application, run the following commands:
+
+```
+docker build -t myob-rest-api -f ./docker/Dockerfile .
+
+docker run -d  -p 8080:8080 myob-rest-api:latest
+```
+
+Alternatively, you can run the `deploy` file.
+
 
 The main routine sits in <code>MyobRestApiApplication.java</code>. There are three functionalities associated to three links:
 

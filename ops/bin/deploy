@@ -2,7 +2,6 @@
 
 set -e
 
-
 docker build -t myob-rest-api -f ./docker/Dockerfile .
 
 docker run -d  -p 8080:8080 myob-rest-api:latest

@@ -14,15 +14,15 @@ class HelloWorldResponseTest {
     void testHelloWorld() throws IOException, NoSuchFieldException, IllegalAccessException {
 
         //Given
-//        HttpURLConnection testConnection = (HttpURLConnection) new URL("http://localhost:8080/").openConnection();
+        HttpURLConnection testConnection = (HttpURLConnection) new URL("http://localhost:8080/").openConnection();
         HelloWorld resultResponse = HelloWorldResponse.helloWorld("");
 
         // When
-//        final int resultResponseCode = testConnection.getResponseCode();
+        final int resultResponseCode = testConnection.getResponseCode();
         final String resultMessage = resultResponse.getMessage();
 
         // Then
-//        assertEquals(200, resultResponseCode, "Error in connection");
+        assertEquals(200, resultResponseCode, "Error in connection");
         assertEquals("Hello World!", resultMessage, "Error in message");
     }
 }
