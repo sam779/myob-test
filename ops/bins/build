@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -ex
+
+echo "-- Building --"
+docker build -t myob-rest-api -f ./docker/Dockerfile .
+echo 'done building!'

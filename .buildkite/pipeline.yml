@@ -1,7 +1,17 @@
----
 steps:
-  - label: ":rocket: Prod"
-#    branches: master
+  - label: ":test_tube::hammer: Test & Build"
+    commands:
+      - mvn test
+    artifact_paths: target/libs/*
+    plugins:
+      - docker#v3.8.0:
+          image: "openjdk:11-jre-slim"
+    agents:
+      queue: myob-rest-api-agent
+
+  - wait
+  - label: ":rocket: Deploy"
+    branches: master
     command: ops/bins/deploy
     retry:
       manual:
