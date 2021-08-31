@@ -2,6 +2,7 @@ steps:
   - label: ":test_tube::hammer: Test & Build"
     commands:
       - mvn test
+      - ops/bins/build
     artifact_paths: target/libs/*
     plugins:
       - docker#v3.8.0:

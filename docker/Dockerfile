@@ -1,6 +1,6 @@
 FROM openjdk:11-jre-slim
 
-RUN apt-get install curl
+#RUN apt-get install curl
 
 COPY target/myob-rest-api-0.1.0.war /app.war
 
