@@ -6,4 +6,4 @@ steps:
       manual:
         permit_on_passed: true
     agents:
-      - queue=myob-rest-api-agent
+      - queue: myob-rest-api-agent

@@ -10,4 +10,3 @@ RUN chmod 777 /run.sh
 
 ENTRYPOINT ["/run.sh"]
 
-#CMD ["/usr/bin/java", "-jar", "-Dspring.profiles.active=default", "/app.war"]
