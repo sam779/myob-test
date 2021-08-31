@@ -3,7 +3,7 @@ set -eux
 
 #docker run -d -t --name myob-rest-api buildkite/agent:3 start --token "<b2e64a3af8cf6e6fa0df3d6b803ed84f572a96f3c0500020f0>"
 #
-##buildkite-agent start --token "b2e64a3af8cf6e6fa0df3d6b803ed84f572a96f3c0500020f0"
+buildkite-agent start --token "b2e64a3af8cf6e6fa0df3d6b803ed84f572a96f3c0500020f0"
 #
 #docker build -t myob-rest-api -f ./docker/Dockerfile .
 #
