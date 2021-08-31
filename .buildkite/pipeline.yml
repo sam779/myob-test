@@ -1,0 +1,10 @@
+---
+steps:
+  - label: ":rocket: Prod"
+#    branches: master
+    command: ops/bins/deploy
+    retry:
+      manual:
+        permit_on_passed: true
+    agents:
+      queue: europa-fs-customer-management
